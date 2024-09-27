@@ -1,8 +1,7 @@
 function sum(a) {
-    var sum = a[0];
-    for(var i = 1; i < a.length; i++) {
-        //var i should start as 1. var sum is already equal to the first element in the array a
-        //therefore, having i start at 0 will make the sum count the first element twice while calculating the sum
+    var sum = 0;
+    //changed sum to start at zero so the first elemtent in a does not get counted twice.
+    for(var i = 0; i < a.length; i++) {
         sum += a[i];
     }
     return sum;
